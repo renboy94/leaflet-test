@@ -1,0 +1,152 @@
+.details-wrapper {
+  //   background-color: gray;
+  width: 100%;
+  height: 100vh;
+  //   margin-top: 80px;
+  display: flex;
+  position: relative;
+}
+
+.details-wrapper .report-details {
+  flex: 2;
+  background-color: gray;
+  //   border: 5px solid black;
+  opacity: 0.5;
+  display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  margin-bottom: 80px;
+
+  .simple-bar {
+    // background-color: red;
+    width: 100%;
+    // height: 100vh;
+    display: flex;
+    // padding: 10px;
+
+    .reports-post {
+      margin: 10px;
+      min-height: 100%;
+      background-color: orange;
+      border: 1px solid #333333;
+    }
+
+    .comment-view {
+      flex: 1;
+      color: #333333;
+      //   min-height: 100%;
+      margin: 10px;
+      //   width: 80%;
+      background-color: #ffffff;
+      border: 1px solid #333333;
+      display: flex;
+      flex-direction: column;
+
+      .comment-box {
+        min-height: 100%;
+        flex: 1;
+        textarea {
+          width: 100%;
+          resize: none;
+          //   height: 200px;
+        }
+      }
+
+      .comment-interactivity {
+        // border: 1px solid red;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+
+        ul {
+          list-style-type: none;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.details-wrapper .report-details .simple-bar .reports-post {
+  display: flex;
+
+  .reports-post-votes {
+    flex-basis: 50px;
+    background-color: #eeeeee;
+    border-right: 1px solid #333333;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      padding: 10px 0;
+
+      li {
+        button {
+          background-color: #eeeeee;
+          border: 1px solid #eeeeee;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .reports-post-details {
+    flex: 1;
+    background-color: #eeeeee;
+    padding: 16px;
+
+    .user-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+    }
+
+    .post-image {
+      padding: 16px 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .post-interactivity {
+      ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+          //   border: 1px solid black;
+
+          div {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        li:not(:first-child) {
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+
+  .reports-post-details .user-info ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+    li:not(:first-child) {
+      padding-left: 16px;
+    }
+  }
+}
+
+.details-wrapper .report-map {
+  //   flex: 1;
+  flex-basis: 350px;
+  background-color: goldenrod;
+}
